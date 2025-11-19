@@ -14,6 +14,7 @@ Reusable prompt templates for common TypeScript and web development tasks. Locat
 - **typescript-types.prompt.md** - Generate TypeScript interfaces from JSON data or API responses
 - **github-workflow.prompt.md** - Create GitHub Actions CI/CD workflow files
 - **vscode-changelog-research.prompt.md** - Research VS Code changelog URLs and auto-generate working examples of new AI features
+- **update-copilot-files.prompt.md** - Analyze and improve existing agents, prompts, and custom instructions with best practices
 
 ### How to Use Prompts
 
@@ -49,6 +50,26 @@ You can provide multiple URLs to research several releases at once:
 ```
 #vscode-changelog-research.prompt.md https://code.visualstudio.com/updates/v1_106 https://code.visualstudio.com/updates/v1_105
 ```
+
+#### Example: Updating Existing Copilot Files
+
+To analyze and improve your existing agents, prompts, and custom instructions:
+
+```
+#update-copilot-files.prompt.md review and update all files
+```
+
+Or target specific files:
+```
+#update-copilot-files.prompt.md update the plan-fast agent with latest best practices
+```
+
+This will:
+1. Analyze existing Copilot customization files
+2. Identify outdated syntax, missing features, or unclear documentation
+3. Apply targeted improvements
+4. Document all changes with rationale and testing instructions
+5. Update the README if needed
 
 ## Custom Agents
 
