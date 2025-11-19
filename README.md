@@ -13,6 +13,7 @@ Reusable prompt templates for common TypeScript and web development tasks. Locat
 - **code-review.prompt.md** - Comprehensive code review checklist covering types, security, performance, and best practices
 - **typescript-types.prompt.md** - Generate TypeScript interfaces from JSON data or API responses
 - **github-workflow.prompt.md** - Create GitHub Actions CI/CD workflow files
+- **vscode-changelog-research.prompt.md** - Research VS Code changelog URLs and auto-generate working examples of new AI features
 
 ### How to Use Prompts
 
@@ -28,6 +29,26 @@ Or use the file picker in chat:
 3. Add your specific request
 
 Prompts provide consistent structure and ensure best practices are followed automatically.
+
+#### Example: Researching VS Code Changelogs
+
+To automatically learn about new AI features from VS Code release notes:
+
+```
+#vscode-changelog-research.prompt.md https://code.visualstudio.com/updates/v1_106
+```
+
+This will:
+1. Fetch and analyze the changelog
+2. Identify new AI/Copilot features
+3. Create working examples (agents, prompts, configs)
+4. Add documentation and testing instructions
+5. Update the README with new examples
+
+You can provide multiple URLs to research several releases at once:
+```
+#vscode-changelog-research.prompt.md https://code.visualstudio.com/updates/v1_106 https://code.visualstudio.com/updates/v1_105
+```
 
 ## Custom Agents
 
