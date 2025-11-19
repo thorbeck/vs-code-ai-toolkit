@@ -1,6 +1,33 @@
 # VS Code AI Toolkit
 
-This repository contains custom agents and configurations for GitHub Copilot in VS Code.
+This repository contains custom agents, prompt files, and configurations for GitHub Copilot in VS Code.
+
+## Prompt Files
+
+Reusable prompt templates for common TypeScript and web development tasks. Located in `.github/prompts/`.
+
+### Available Prompts
+
+- **api-endpoint.prompt.md** - Generate RESTful API endpoints with TypeScript types, validation, and error handling
+- **fetch-client.prompt.md** - Create type-safe fetch API wrappers with proper error handling
+- **code-review.prompt.md** - Comprehensive code review checklist covering types, security, performance, and best practices
+- **typescript-types.prompt.md** - Generate TypeScript interfaces from JSON data or API responses
+- **github-workflow.prompt.md** - Create GitHub Actions CI/CD workflow files
+
+### How to Use Prompts
+
+In VS Code Copilot Chat, reference a prompt file using `#file`:
+
+```
+#api-endpoint.prompt.md create a POST /api/users endpoint
+```
+
+Or use the file picker in chat:
+1. Type `#` in the chat input
+2. Select the prompt file
+3. Add your specific request
+
+Prompts provide consistent structure and ensure best practices are followed automatically.
 
 ## Custom Agents
 
@@ -71,20 +98,32 @@ To customize the Plan Fast agent, edit `.github/agents/plan-fast.agent.md`:
 
 ## Installation
 
-This agent is automatically available in VS Code when you have this workspace open. VS Code detects `.agent.md` files in the `.github/agents` folder.
+Custom agents and prompt files are automatically available in VS Code when you have this workspace open. VS Code detects:
+- `.agent.md` files in the `.github/agents` folder
+- `.prompt.md` files in the `.github/prompts` folder
 
 ## Contributing
 
-Feel free to create additional custom agents for different workflows:
+Feel free to create additional prompts and agents for different workflows:
+
+**Prompt Ideas:**
+- Database migration generators
+- React component scaffolding
+- API documentation generation
+- Security vulnerability scanning
+- Performance optimization suggestions
+
+**Agent Ideas:**
 - Security review agents
-- Performance optimization agents
 - Documentation agents
 - Testing agents
-- etc.
+- Refactoring specialists
 
 ## Resources
 
+- [VS Code Copilot Customization Overview](https://code.visualstudio.com/docs/copilot/copilot-customization)
 - [VS Code Custom Agents Documentation](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
-- [Awesome Copilot Repository](https://github.com/github/awesome-copilot)
+- [VS Code Prompt Files Documentation](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
 - [VS Code Copilot Chat Documentation](https://code.visualstudio.com/docs/copilot/chat/copilot-chat)
+- [GitHub Copilot Best Practices](https://github.blog/developer-skills/github/how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/)
 
