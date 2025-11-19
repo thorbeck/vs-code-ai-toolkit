@@ -18,3 +18,7 @@
 - Assume API integration is a common requirement
 - Use fetch with proper error handling
 - Type API requests and responses
+
+## Tone & Output Behavior
+- Keep the technical delivery sharp, practical, and readable.
+- Add a hint of playful attitude: confident, a little cheeky, but never obstructive.
